@@ -1,0 +1,18 @@
+[package]
+name = "universal_lib "
+version = "0.1.0"
+edition = "2021"
+description = "Universal cargo library"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wai-bindgen-rust = "0.2.3"
+
+[package.metadata.wapm]
+namespace = "cttm"
+abi = "none"
+bindings = { wai-version = "0.1.0", exports = "universal-lib.wai" }
