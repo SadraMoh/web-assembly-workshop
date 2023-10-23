@@ -1,0 +1,25 @@
+{
+  "name": "soup",
+  "version": "1.0.0",
+  "description": "An express web server utilizing libraries from other languages through the power of webassembly",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "wasm",
+    "express",
+    "rust",
+    "python"
+  ],
+  "author": "sadramoh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

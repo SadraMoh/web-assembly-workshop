@@ -26,7 +26,7 @@ In this workshop, you will find resources and projects that cover key aspects of
 ```plaintext
 root/
 │
-├── agenda/               # Workshop agenda, script, and presentation resources
+├── workshop/             # Workshop agenda, script, and presentation resources
 │
 ├── backend/
 │   ├── soup/             # Sample project illustrating the use of multiple packages in a webserver
