@@ -1,2 +1,2 @@
 // say hello to the user
-hello-world: func(user: string) -> string
+hello: func(user: string) -> string
