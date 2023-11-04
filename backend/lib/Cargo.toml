@@ -1,16 +1,16 @@
 [package]
-name = "universal_lib "
-version = "0.1.0"
+name = "universal_lib"
+version = "0.1.3"
 edition = "2021"
 description = "Universal cargo library"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
 
-[package.metadata.wapm]
-namespace = "cttm"
-abi = "none"
-bindings = { wai-version = "0.1.0", exports = "universal-lib.wai" }
-
 [dependencies]
 wai-bindgen-rust = "0.2.3"
+
+[package.metadata.wasmer]
+namespace = "sadramoh"                                              # same as your wasmer.io account handle
+abi = "wasi"                                                        # choose "wasi" for both javascript and python bindings
+bindings = { wai-version = "0.1.0", exports = "universal-lib.wai" } # should not contain `_` underscores
