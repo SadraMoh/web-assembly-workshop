@@ -18,7 +18,8 @@
   "license": "ISC",
   "dependencies": {
     "@sadramoh/universal_lib": "https://registry-cdn.wapm.io/bindings/generator-0.7.1/npm/sadramoh/universal_lib/universal_lib-0.1.1-alpha.3.tar.gz",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "pyodide": "^0.24.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
