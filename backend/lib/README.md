@@ -20,7 +20,7 @@ cargo build --target=wasm32-wasi
 If there are no compile errors, the new version of the library should be built into the path:
 `target/wasm32-wasi/debug/universal_lib.wasm`.
 
-The wasm executable can be referenced under hte above mentioned path by projects willing to consume the library.
+The wasm executable can be referenced under the above mentioned path by projects willing to consume the library.
 
 You can inspect the generated executable using the `wasmer inspect` command:
 
@@ -30,7 +30,7 @@ wasmer inspect universal_lib.wasm
 
 ### How to publish
 
-Make sure [wasmer](https://github.com/wasmerio/wasmer) ist installed.
+Make sure [wasmer](https://github.com/wasmerio/wasmer) is installed.
 
 The [cargo wasmer](https://github.com/wasmerio/cargo-wasmer) utility can be used to publish a new version of the package to the webassembly registry.
 
