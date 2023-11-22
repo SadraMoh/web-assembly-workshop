@@ -1,3 +1,5 @@
 node_modules
 pyodide
 target
+
+universal_lib_go.wasm

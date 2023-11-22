@@ -1,6 +1,6 @@
 [package]
 name = "sadramoh/universal_lib_go"
-version = "0.0.1-alpha.1"
+version = "0.0.1-alpha.3"
 description = "Universal go library"
 readme = "README.md"
 

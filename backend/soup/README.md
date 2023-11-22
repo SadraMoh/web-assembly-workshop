@@ -2,6 +2,11 @@
 
 An express.js webserver utilizing the power of webassembly to host code from multiple different languages.
 
+### Go
+
+To be able to run wasi modules compiled from go, the `wasm` module must be generated and be available on disk.
+Follow the instructions in `lib2/README.md` on how to generate the `wasm` module.
+
 ### Python
 
 To be able to run python on the server in a sandboxed environment, a release version of `pyodide` must be available in the root of the project.
