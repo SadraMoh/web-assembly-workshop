@@ -6,6 +6,7 @@ import { bindings as rustBindings } from '@sadramoh/universal_lib';
 import { loadPyodide } from 'pyodide';
 
 import goHello from './src/manual-interfacing/go-hello.js'
+import cHello from './src/manual-interfacing/c-hello.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -22,6 +23,11 @@ app.get('/rust', async function (req, res) {
 
 app.get('/go', async function (req, res) {
   const str = await goHello('from Go');
+  res.send(str);
+});
+
+app.get('/c', async function (req, res) {
+  const str = await cHello('from C');
   res.send(str);
 });
 

@@ -12,6 +12,8 @@
     "wasm",
     "express",
     "rust",
+    "go",
+    "c",
     "python"
   ],
   "author": "sadramoh",
