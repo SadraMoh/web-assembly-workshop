@@ -6,7 +6,7 @@
 import { WASI } from "wasi";
 import fs from 'fs';
 
-const WASM_MODULE_PATH = "../lib2/universal_lib_go.wasm";
+const WASM_MODULE_PATH = "../go/universal_lib_go.wasm";
 
 /**
  * 

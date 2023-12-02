@@ -13,7 +13,14 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 
 app.get('/', function (req, res) {
-  res.send('Hello World');
+  res.send(`<pre>
+  .
+  ├── /
+  ├── /rust
+  ├── /c
+  ├── /go
+  └── /python
+  </pre>`);
 });
 
 app.get('/rust', async function (req, res) {

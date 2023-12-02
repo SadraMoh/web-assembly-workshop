@@ -11,7 +11,7 @@ In this workshop, you will find resources and projects that cover key aspects of
 2. **Sample Project: `soup`**
 
    - `soup` is a sample project demonstrating the power of WebAssembly on the server. It showcases the use of multiple packages written in different languages within the same web server.
-   - The project depends on a library that is used to illustrate how various languages can interact within a single project.
+   - The project depends on multiple libraries each written in a different language and illustrates how various languages can interact within a single project.
 
 3. **Sample Project: wasm-bindgen and Leptos**
 
@@ -30,7 +30,9 @@ root/
 │
 ├── backend/
 │   ├── soup/             # Sample project illustrating the use of multiple packages in a webserver
-│   └── lib/              # Library used in the sample project
+│   ├── c/                # A library written in the `c` programming language that can be compiled to wasm
+│   ├── go/               # A library written in the `go` programming language that can be compiled to wasm
+│   └── rust/             # A library written in the `rust` programming language that can be compiled to wasm
 │
 ├── frontend/
 |   ├── wasm-bindgen/     # Sample project showcasing wasm-bindgen an

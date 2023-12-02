@@ -5,7 +5,7 @@ An express.js webserver utilizing the power of webassembly to host code from mul
 ### Go
 
 To be able to run wasi modules compiled from go, the `wasm` module must be generated and be available on disk.
-Follow the instructions in `lib2/README.md` on how to generate the `wasm` module.
+Follow the instructions in `go/README.md` on how to generate the `wasm` module.
 
 ### Python
 
