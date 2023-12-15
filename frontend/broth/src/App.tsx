@@ -1,9 +1,16 @@
-import { createSignal } from "solid-js";
+import { createResource, createSignal } from "solid-js";
 import wasmLogo from "/wasm.svg";
 import "./App.css";
 
+import cHello from "./manual-interface.js";
+
 function App() {
-  const [count, setCount] = createSignal(0);
+  const [value, setValue] = createSignal("WebAssembly World");
+
+  const [derived] = createResource(
+    () => [value()],
+    async ([val]) => await cHello(val)
+  );
 
   return (
     <>
@@ -13,10 +20,14 @@ function App() {
         </a>
       </div>
       <h1>Wasm on the browser</h1>
+
       <div class="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count()}
-        </button>
+        <input
+          type="text"
+          value={value()}
+          onInput={(e) => setValue(e.currentTarget.value)}
+        />
+        <pre>{derived()}</pre>
       </div>
     </>
   );
