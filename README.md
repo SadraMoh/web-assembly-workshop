@@ -29,13 +29,14 @@ root/
 ├── workshop/             # Workshop agenda, script, and presentation resources
 │
 ├── backend/
-│   ├── soup/             # Sample project illustrating the use of multiple packages in a webserver
+│   ├── soup/             # Sample backend project illustrating the use of multiple packages in a webserver
 │   ├── c/                # A library written in the `c` programming language that can be compiled to wasm
 │   ├── go/               # A library written in the `go` programming language that can be compiled to wasm
 │   └── rust/             # A library written in the `rust` programming language that can be compiled to wasm
 │
 ├── frontend/
-|   ├── wasm-bindgen/     # Sample project showcasing wasm-bindgen an
+|   ├── broth/            # Sample frontend project illustrating the use of multiple wasi packages in a bundle
+|   ├── wasm-bindgen/     # Sample project showcasing wasm-bindgen
 │   └── leptos/           # Project showcasing leptos
 │
 └── game-project/         # Game project directory
