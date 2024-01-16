@@ -1,11 +1,12 @@
 # Workshop Agenda: WebAssembly and Rust - Unleashing Performance and Versatility
 
-## Introduction (15 minutes)
+## Introduction (10 minutes)
 
 - Welcome and brief overview of the workshop's objectives.
+- Who this workshop is for and prerequisites.
 - A quick introduction to WebAssembly and Rust, highlighting their significance in modern web development.
 
-## Section 1: WebAssembly on the Server (45 minutes)
+## Section 1: What is WASM?
 
 1. **What is WebAssembly? (5 minutes)**
 

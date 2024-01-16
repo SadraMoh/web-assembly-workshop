@@ -13,20 +13,15 @@ In this workshop, you will find resources and projects that cover key aspects of
    - `soup` is a sample project demonstrating the power of WebAssembly on the server. It showcases the use of multiple packages written in different languages within the same web server.
    - The project depends on multiple libraries each written in a different language and illustrates how various languages can interact within a single project.
 
-3. **Sample Project: wasm-bindgen and Leptos**
+3. **Sample Project: WASM in the browser and Leptos**
 
-   - This project introduces the use of `wasm-bindgen` to bridge the gap between Rust and JavaScript in a web application. Leptos, a JavaScript library, is integrated with Rust to illustrate interoperability.
-
-4. **Sample Project: Games on the Web**
-
-   - This project showcases the development of a simple game using a Rust game engine that compiles to WebAssembly. Participants can explore how Rust's performance and WebAssembly's portability come together in web-based games.
+   - This project introduces the use of `wasi` modules within a web application.
+   - Introducing Leptos, a full-stack Rust framework for the web with modern features ranging from functional components and signals, to server functions and symmetric rendering.
 
 ## Repository Structure
 
 ```plaintext
 root/
-│
-├── workshop/             # Workshop agenda, script, and presentation resources
 │
 ├── backend/
 │   ├── soup/             # Sample backend project illustrating the use of multiple packages in a webserver
@@ -36,8 +31,9 @@ root/
 │
 ├── frontend/
 |   ├── broth/            # Sample frontend project illustrating the use of multiple wasi packages in a bundle
-|   ├── wasm-bindgen/     # Sample project showcasing wasm-bindgen
-│   └── leptos/           # Project showcasing leptos
+│   └── oxi/              # Project showcasing leptos
+|
+├── workshop/             # Workshop agenda, script, and presentation resources
 │
-└── game-project/         # Game project directory
+*
 ```
