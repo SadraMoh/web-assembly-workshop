@@ -13,4 +13,4 @@ app.get("/rust", async function (req, res) {
   res.send(/* send result here */);
 });
 
-app.listen(3000);
+app.listen(3002);
