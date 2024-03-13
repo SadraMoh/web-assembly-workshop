@@ -43,7 +43,7 @@ This would probably be the first result if you searched it on google, because it
 
 You might still be scratching your head after reading that so let's dissect this definition into smaller chunks.
 
-WASM is a binary instruction format. It is a very low level way of communicating intent and interfacing with the hardware to get it to do what we want, which is done using a set of commands and instructions. So it is very similar to plain Assembly, except its portable. With assembly you'd need a different flavor for every kind of CPU there is out there. With WASM you only have one that works on any hardware. It's because WASM code does not run directly on the CPU. There is a relatively human readable textual format of WASM and then there is the binary format, I am going to show you what the textual format looks like.
+WASM is a binary instruction format. It is a very low level way of communicating intent and interfacing with the hardware to get it to do what we want, which is done using a set of commands and instructions. So it is very similar to plain Assembly, except its portable. With assembly you'd need a different flavor for every kind of CPU there is out there. With WASM you only have one that works on any hardware. It's because WASM code does not run directly on the CPU. There is a relatively human readable textual format of WASM and then there is the binary format, <Explain what an abstraction is> I am going to show you what the textual format looks like.
 
 WASM is a compilation target. This basically means WASM is not intended to be programmed in directly. That would be plain insane it's 2024 for heavens sake.
 But rather, WASM is supposed to be used as a target to compile your favorite languages to. In this sense WASM is an intermediary between a higher level language, and the bare metal. Its basically an Abstraction.
@@ -65,6 +65,8 @@ Defines and exports a function named `helloWorld`, in it passes a pointer to the
 
 > Slide 5
 
+(Explain generally what these tables are and why there are there)
+
 Which languages can I use to write Web Apps using WASM then, is my favorite language supported?
 
 Most language already have ecosystems around compiling to WASM. There most probably is a toolchain/compiler for most languages that allows the compilation of that language to WASM.
@@ -75,6 +77,8 @@ For interpreted languages like python, the solution is as easy as compiling the 
 Traditionally the most used languages to target WASM were C and C++ using `EmScripten` but there is a new kid on the block, and he is pretty cool.
 
 > Slide 6
+
+(Explain generally what these tables are and why there are there)
 
 You might have heard me mention Web Assembly on the backend. Yes WASM can run pretty much everywhere there is a runtime for.
 
@@ -169,7 +173,7 @@ to be used to minimize such deficits.
 
 WASM like many other technologies is of course not a silver bullet, there are projects where it makes more sense to use WASM and there are ones where it doesn't.
 
-There are various ways to build up a WASM stack - a set of tools and technologies that work on the premise of WASM, which ones to choose is highly subjective to the kind of project they are being used to build and its requirements and focuses.
+There are various ways to build up a WASM stack - a set of tools and technologies that work on the premise of WASM;  which ones to choose is highly subjective to the kind of project they are being used to build and its requirements and focuses.
 
 > Slide 16
 
