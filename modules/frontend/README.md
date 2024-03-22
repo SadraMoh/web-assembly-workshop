@@ -1,4 +1,26 @@
-# React + TypeScript + Vite
+
+# Description
+
+This is a frontend react project that imports a wasm library and utilizes its functions.
+
+# Install & Run
+
+To install all the dependencies, run
+
+```shell
+npm install
+```
+
+To run the application in development mode, with live updates, run
+
+```shell
+npm run dev
+```
+
+
+
+
+# (Template) React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
