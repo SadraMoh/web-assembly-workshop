@@ -269,10 +269,7 @@ hello: func(user: string) -> string
 
 lib.rs
 ```rust
-
 wai_bindgen_rust::export!("universal-lib.wai");
-
-
 ```
 
 lib.rs
