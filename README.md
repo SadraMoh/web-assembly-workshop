@@ -33,6 +33,12 @@ root/
 |   ├── broth/            # Sample frontend project illustrating the use of multiple wasi packages in a bundle
 │   └── oxi/              # Project showcasing leptos
 |
+├── modules/              # Hands-On modules and their starter projects
+|   ├── backend/          # Backend module boilerplate
+|   ├── frontend/         # Frontend module boilerplate (imports already handled)
+|   ├── lib/              # Instructions on how to make your own shared WASM library
+│   └── fullstack.md      # Instructions on getting started with a fullstack leptos app
+|
 ├── workshop/             # Workshop agenda, script, and presentation resources
 │
 *
