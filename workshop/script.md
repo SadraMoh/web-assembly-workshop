@@ -230,6 +230,75 @@ which is where the library will reside and can be depended on by other projects.
 
 > Live Demo
 
+```shell
+
+cd package/
+cargo init --lib 
+
+```
+
+Cargo.toml
+```toml
+
+[package]
+name = "universal_lib"
+version = "0.1.4"
+edition = "2021"
+description = "Universal cargo library"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wai-bindgen-rust = "0.2.3"
+
+[package.metadata.wasmer]
+namespace = "sadramoh"                                              # same as your wasmer.io account handle
+abi = "wasi"                                                        # choose "wasi" for both javascript and python bindings
+bindings = { wai-version = "0.1.0", exports = "universal-lib.wai" } # should not contain `_` underscores
+
+```
+
+universal-lib.wai
+```wai
+
+// say hello to the user
+hello: func(user: string) -> string
+
+```
+
+lib.rs
+```rust
+
+wai_bindgen_rust::export!("universal-lib.wai");
+
+
+```
+
+lib.rs
+```rust
+
+pub struct UniversalLib;
+
+impl universal_lib::UniversalLib for UniversalLib {
+    // we'll implement the modules functions here
+}
+
+```
+
+lib.rs
+```rust
+
+pub struct UniversalLib;
+
+impl universal_lib::UniversalLib for UniversalLib {
+    fn hello(user: String) -> String {
+        format!("Hello {user}")
+    }
+}
+
+```
+
 > Slide 22
 
 So now we have a library that can be hosted in Javascript and Python applications.
