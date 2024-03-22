@@ -413,7 +413,7 @@ serde = { version = "1.0.195", features = ["derive"] }
 uuid = { version = "1.6.1", features = ["v4"] }
 ```
 
-Define Todo Struct
+Define Todo struct
 
 ```rust
 use serde::{Deserialize, Serialize};
@@ -425,6 +425,8 @@ pub struct Todo {
     pub is_done: bool,
 }
 ```
+
+Write logic to add and then fetch todos
 
 ```rust
 fn HomePage() -> impl IntoView {
@@ -449,11 +451,15 @@ fn HomePage() -> impl IntoView {
 }
 ```
 
+Store all todos in a single in-memory array on the server side
+
 ```rust
 lazy_static! {
     static ref DB: Mutex<Vec<Todo>> = Mutex::new(Vec::new());
 }
 ```
+
+Write a server function to get the todos
 
 ```rust
 #[server(GetTodos)]
@@ -463,6 +469,8 @@ pub async fn get_todos() -> Result<Vec<Todo>, ServerFnError> {
     Ok(db.to_vec())
 }
 ```
+
+Write a server function to add new todos
 
 ```rust
 #[server(AddTodo)]
@@ -481,6 +489,8 @@ pub async fn add_todo(title: String) -> Result<(), ServerFnError> {
     Ok(())
 }
 ```
+
+Render all the todos in the UI
 
 ```rust
 view! {
